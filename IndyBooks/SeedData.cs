@@ -865,6 +865,22 @@ namespace IndyBooks
                 Price = 30.00M,
                 Year = "1994"
             });
+            context.Books.Add(new Book
+            {
+                Title = "Eric's Book",
+                Author = "Eric Ro",
+                Edition = "1",
+                Price = 10000.00M,
+                Year = ""
+            });
+            context.Books.Add(new Book
+            {
+                Title = "Eric's Better Book",
+                Author = "Wing Cho",
+                Edition = "1",
+                Price = 20000.00M,
+                Year = ""
+            });
 
 
             await context.SaveChangesAsync();
